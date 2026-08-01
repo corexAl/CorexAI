@@ -1,31 +1,28 @@
-# Use a lightweight Python image
 FROM python:3.12-slim
 
-# Prevent Python from writing .pyc files
+# Python settings
 ENV PYTHONDONTWRITEBYTECODE=1
-
-# Disable output buffering
 ENV PYTHONUNBUFFERED=1
 
-# Set working directory
+# Working directory
 WORKDIR /app
 
-# Install build tools (some Python packages require them)
-RUN apt-get update && apt-get install -y \
+# Install required system packages
+RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     git \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy dependency files first for Docker cache
+# Install Python dependencies
 COPY requirements.txt .
-COPY requirements-dev.txt .
+RUN pip install --upgrade pip
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Install dependencies
-RUN pip install --upgrade pip && \
-    pip install -r requirements.txt
-
-# Copy project
+# Copy the project
 COPY . .
 
-# Default command
-CMD ["python", "main.py"]
+# Allow Python to import from src/
+ENV PYTHONPATH=/app/src
+
+# Start COREX
+CMD ["python", "-m", "corext.main"]
