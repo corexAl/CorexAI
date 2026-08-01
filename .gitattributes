@@ -1,1 +1,6 @@
-dist/* -linguist-generated
+*.json linguist-detectable=true
+*.sql linguist-detectable=true
+*.toml linguist-detectable=true
+*.yaml linguist-detectable=true
+*.yml linguist-detectable=true
+*.in linguist-detectable=true
