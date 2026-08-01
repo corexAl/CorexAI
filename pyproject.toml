@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "corext"
+version = "0.1.0"
+description = "COREX: A complete language model built entirely from scratch"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+dependencies = [
+    "numpy>=1.24",
+    "torch>=2.0",
+    "tqdm>=4.65",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "black>=23.0", "ruff>=0.1"]
+train = ["datasets>=2.14", "wandb>=0.15"]
+
+[project.scripts]
+corex = "corext.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
