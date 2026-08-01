@@ -4,6 +4,8 @@
 
 **COREX** (Centralized Organized Reasoning & Extraction Matrix) is a complete, self-contained language model built entirely from scratch with zero dependencies on HuggingFace or other AI frameworks. Just pure PyTorch transformer architecture working code.
 
+>[!CAUTION]
+> COREX is still under development. Please wait until release.
 ## What's Inside
 
 | Module | Purpose |
