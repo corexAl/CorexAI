@@ -1,0 +1,58 @@
+Metadata-Version: 2.4
+Name: corext
+Version: 0.1.0
+Summary: COREX: A complete language model built entirely from scratch
+Author: 
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.24
+Requires-Dist: torch>=2.0
+Requires-Dist: tqdm>=4.65
+Requires-Dist: pyyaml>=6.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+Requires-Dist: black>=23.0; extra == "dev"
+Requires-Dist: ruff>=0.1; extra == "dev"
+Provides-Extra: train
+Requires-Dist: datasets>=2.14; extra == "train"
+Requires-Dist: wandb>=0.15; extra == "train"
+
+# COREX — Corext: A LLM From Scratch
+
+**COREX** (Centralized Organized Reasoning & Extraction Matrix) is a complete, self-contained large language model built entirely from scratch. No HuggingFace abstractions, no PyTorch transforms hand-waving — just the raw architecture working code and documentation.
+
+## Architecture
+
+| Component | Detail |
+|---|---|
+| **Tokenizer** | Byte-level BPE (512 base + 960 merges = 1472 vocab) |
+| **Embedding** | Learned embeddings (vocab × dim) |
+| **Block** | Causal Transformer with SwiGLU FFN |
+| **Attention** | Multi-head RoPE, softmax attention, masked |
+| **Norm** | RMSNorm pre-LN |
+| **Positional** | Rotary Embeddings (RoPE) |
+| **FFN** | SwiGLU gated feed-forward |
+| **Init** | Kaiming normal, 0.1 residual scale |
+
+## Quick Start
+
+```bash
+pip install corext
+corex train --preset 100m
+corex generate --checkpoint checkpoints/corex-100m.pth "Hello" --max-tokens 128
+```
+
+## Model Zoo
+
+- **corex-100m**: ~100M params, 24 layers, dim=512
+- **corex-340m**: ~340M params, 32 layers, dim=768  
+- **corex-1b**: ~1B params, 48 layers, dim=1024
+
+## Install
+
+```bash
+pip install corext
+```
+
+## License: MIT

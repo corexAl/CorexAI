@@ -1,0 +1,23 @@
+# COREX-1B Configuration  
+vocab_size: 512
+hidden_size: 1024
+intermediate_size: 3072
+num_hidden_layers: 48
+num_attention_heads: 16
+max_position_embeddings: 4096
+rope_theta: 10000.0
+layer_norm_eps: 1e-5
+learning_rate: 2.0e-4
+weight_decay: 0.01
+warmup_steps: 10000
+max_steps: 500000
+batch_size: 128
+sequence_length: 2048
+gradient_accumulation_steps: 4
+attention_dropout: 0.1
+residual_dropout: 0.1
+adam_beta1: 0.9
+adam_beta2: 0.95
+adam_eps: 1e-8
+output_dir: outputs/corex-1b
+seed: 42

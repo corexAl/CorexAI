@@ -1,0 +1,23 @@
+# COREX-340M Configuration
+vocab_size: 512
+hidden_size: 768
+intermediate_size: 2304
+num_hidden_layers: 32
+num_attention_heads: 12
+max_position_embeddings: 4096
+rope_theta: 10000.0
+layer_norm_eps: 1e-5
+learning_rate: 2.5e-4
+weight_decay: 0.01
+warmup_steps: 5000
+max_steps: 200000
+batch_size: 64
+sequence_length: 1024
+gradient_accumulation_steps: 4
+attention_dropout: 0.1
+residual_dropout: 0.1
+adam_beta1: 0.9
+adam_beta2: 0.95
+adam_eps: 1e-8
+output_dir: outputs/corex-340m
+seed: 42
