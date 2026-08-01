@@ -1,0 +1,40 @@
+```yaml
+cff-version: 1.2.0
+title: "COREX"
+message: "If you use COREX in your research or project, please cite it using the metadata below."
+type: software
+
+authors:
+  - alias: "SYOP200"
+
+repository-code: "https://github.com/SYOP200/COREX"
+url: "https://github.com/SYOP200/COREX"
+
+license: "MIT"
+
+keywords:
+  - artificial-intelligence
+  - language-model
+  - llm
+  - python
+  - machine-learning
+  - natural-language-processing
+  - transformer
+
+abstract: >
+  COREX is an open-source large language model framework written in
+  Python. It is designed to provide a lightweight, extensible foundation
+  for experimentation, inference, and future model development.
+
+version: "0.1.0-beta"
+date-released: "2026-08-01"
+
+preferred-citation:
+  type: software
+  authors:
+    - alias: "SYOP200"
+  title: "COREX"
+  version: "0.1.0-beta"
+  date-released: "2026-08-01"
+  url: "https://github.com/SYOP200/COREX"
+```
