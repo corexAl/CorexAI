@@ -4,3 +4,6 @@
 *.yaml linguist-detectable=true
 *.yml linguist-detectable=true
 *.in linguist-detectable=true
+*.txt linguist-detectable=true
+*.cff linguist-detectable=true
+*.cfg linguist-detectable=true
