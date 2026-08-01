@@ -97,3 +97,5 @@ All configs are in `corext/configs/` and support these hyperparameters:
 - **Regularization**: attention_dropout, residual_dropout
 - **Optimization**: adam_beta1/beta2, adam_eps
 - **Precision**: fp16, bf16 (auto-detected on GPU)
+
+This project combines human engineering and AI-assisted code generation. All code included in this repository has been reviewed and integrated by the maintainer.
