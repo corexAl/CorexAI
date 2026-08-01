@@ -1,0 +1,21 @@
+[
+  "tests/test_corex.py::TestComponents::test_attention",
+  "tests/test_corex.py::TestComponents::test_feedforward",
+  "tests/test_corex.py::TestComponents::test_rms_norm",
+  "tests/test_corex.py::TestComponents::test_rotary_embedding",
+  "tests/test_corex.py::TestConfig::test_default_config",
+  "tests/test_corex.py::TestConfig::test_get_corex_100m",
+  "tests/test_corex.py::TestConfig::test_yaml_round_trip",
+  "tests/test_corex.py::TestDatasets::test_prepare_training_data",
+  "tests/test_corex.py::TestDatasets::test_streaming_dataset_creation",
+  "tests/test_corex.py::TestFullPipeline::test_train_generate_cycle",
+  "tests/test_corex.py::TestGradientCheckpointing::test_checkpointing_context_manager",
+  "tests/test_corex.py::TestModel::test_forward_logits",
+  "tests/test_corex.py::TestModel::test_forward_loss",
+  "tests/test_corex.py::TestModel::test_gradient_flow",
+  "tests/test_corex.py::TestModel::test_model_creation",
+  "tests/test_corex.py::TestModel::test_weight_tying",
+  "tests/test_corex.py::TestProfiling::test_parameter_counting",
+  "tests/test_corex.py::TestTraining::test_compute_perplexity",
+  "tests/test_corex.py::TestTraining::test_evaluate"
+]

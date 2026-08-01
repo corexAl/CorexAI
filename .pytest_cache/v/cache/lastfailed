@@ -1,0 +1,13 @@
+{
+  "tests/test_corex.py::TestConfig": true,
+  "tests/test_corex.py::TestModel": true,
+  "tests/test_corex.py::TestComponents": true,
+  "tests/test_corex.py::TestTraining": true,
+  "tests/test_corex.py::TestFullPipeline": true,
+  "tests/test_corex.py::TestDatasets": true,
+  "tests/test_corex.py::TestGradientCheckpointing": true,
+  "tests/test_corex.py::TestProfiling": true,
+  "tests/test_corex.py::TestModel::test_gradient_flow": true,
+  "tests/test_corex.py::TestFullPipeline::test_train_generate_cycle": true,
+  "tests/test_corex.py::TestGradientCheckpointing::test_checkpointing_context_manager": true
+}
