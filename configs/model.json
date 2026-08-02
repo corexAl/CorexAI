@@ -1,0 +1,26 @@
+{
+  "name": "COREX",
+  "version": "0.1.0",
+
+  "model": {
+    "architecture": "transformer",
+
+    "vocab_size": 32000,
+
+    "context_length": 2048,
+
+    "embedding_size": 512,
+
+    "layers": 8,
+
+    "attention_heads": 8
+  },
+
+  "training": {
+    "batch_size": 16,
+
+    "learning_rate": 0.0003,
+
+    "epochs": 10
+  }
+}
