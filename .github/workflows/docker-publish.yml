@@ -35,5 +35,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            ghcr.io/corexai/corex:latest
-            ghcr.io/corexai/corex:${{ github.sha }}
+            ghcr.io/corexal/corex:latest
+            ghcr.io/corexal/corex:${{ github.sha }}
