@@ -14,7 +14,7 @@ PyYAML>=6.0
 requests>=2.32.0
 
 # Environment variables
-python-dotenv>=1.0.1
+python-dotenv>=1.2.2
 
 # Optional CLI improvements
 rich>=13.9.0
