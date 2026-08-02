@@ -24,4 +24,4 @@ colorama>=0.4.6
 
 torch>=2.8.0
 
-transformers>=4.56.0
+transformers>=5.14.1
