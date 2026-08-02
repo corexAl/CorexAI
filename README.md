@@ -31,10 +31,13 @@
 
 ### Install
 
-```bash
+```sh
 pip install corext
 ```
-
+or
+```sh
+docker pull ghcr.io/corexal/corex:6242e2bdf19edbb14dbf71b9488bfbc38eba77cd
+```
 ### Train a Model
 
 ```bash
