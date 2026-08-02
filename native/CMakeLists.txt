@@ -1,11 +1,15 @@
-cmake_minimum_required(VERSION 3.15)
+cmake_minimum_required(VERSION 3.18)
 
-project(corex_native)
+project(corex_native C)
 
-find_package(pybind11 REQUIRED)
+set(CMAKE_C_STANDARD 11)
+set(CMAKE_C_STANDARD_REQUIRED ON)
 
-pybind11_add_module(
-    corex_native
-    bindings.cpp
-    corex.cpp
+add_library(corex_native SHARED
+    src/corex.c
+)
+
+target_include_directories(corex_native
+    PUBLIC
+    include
 )
