@@ -17,7 +17,7 @@ requests>=2.32.0
 python-dotenv>=1.0.1
 
 # Optional CLI improvements
-rich>=13.9.0
+rich>=15.0.0
 
 # Optional terminal colors
 colorama>=0.4.6
